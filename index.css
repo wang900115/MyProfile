@@ -92,6 +92,7 @@ main {
     padding: 15px;
     background: linear-gradient(120deg, rgb(82, 82, 136), rgb(54, 54, 92)); 
     border-radius: 8px;
+    opacity: 0;
     transition: all 1s ease-in-out; /* 平滑過渡效果 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 初始陰影 */
     transform: translateX(-100%); /* 初始從左側外部移入 */
@@ -113,13 +114,6 @@ main {
     animation-delay: 0.2s;
 }
 
-.posts li:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-.posts li:nth-child(4) {
-    animation-delay: 0.6s;
-}
 
 /* 標題和連結樣式 */
 .posts h3 a {
