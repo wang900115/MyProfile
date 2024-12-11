@@ -1,50 +1,50 @@
 /* 整體樣式 */
 body {
-    background-color: rgb(42, 42, 84); /* 更深的紫色背景增強質感 */
+    background-color: rgb(42, 42, 84); 
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 更現代的字體 */
-    color: rgb(240, 240, 240); /* 柔和的白色文字 */
-    line-height: 1.6; /* 提升可讀性 */
-    transition: all 0.3s ease-in-out; /* 增加過渡效果 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: rgb(240, 240, 240); 
+    line-height: 1.6; 
+    transition: all 0.3s ease-in-out; 
 }
 
 /* 導覽列樣式 */
 nav {
     display: flex;
-    justify-content: space-evenly; /* 平均分佈空間 */
+    justify-content: space-evenly; 
     align-items: center;
-    background: linear-gradient(90deg, rgb(54, 54, 92), rgb(82, 82, 136)); /* 添加漸層 */
+    background: linear-gradient(90deg, rgb(54, 54, 92), rgb(82, 82, 136)); 
     padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 添加陰影 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 /* 標籤連結樣式 */
 nav a {
-    flex: 1; /* 每個連結等寬 */
-    text-align: center; /* 文字置中 */
+    flex: 1; 
+    text-align: center; 
     padding: 10px 0;
-    color: rgb(255, 200, 50); /* 柔和的橙色 */
-    text-decoration: none; /* 移除底線 */
-    font-size: 16px; /* 按鈕文字大小 */
+    color: rgb(255, 200, 50); 
+    text-decoration: none; 
+    font-size: 16px; 
     font-weight: bold;
-    transition: background-color 0.5s, color 0.5s; /* 平滑效果 */
+    transition: background-color 0.5s, color 0.5s; 
 }
 
 nav a:hover, nav a:focus {
-    background-color: rgb(255, 200, 50); /* 背景變亮 */
-    color: rgb(42, 42, 84); /* 文字顏色反轉 */
-    border-radius: 8px; /* 圓角 */
-    outline: none; /* 移除焦點框 */
+    background-color: rgb(255, 200, 50); 
+    color: rgb(42, 42, 84); 
+    border-radius: 8px; 
+    outline:none;
 }
 
 /* 主內容樣式 */
 main {
     padding: 20px;
-    max-width: 1200px; /* 最大寬度 */
-    margin: 0 auto; /* 置中內容 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加陰影 */
-    background-color: rgba(54, 54, 92, 0.9); /* 半透明背景增強層次感 */
-    border-radius: 12px; /* 圓角 */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(54, 54, 92, 0.9); 
+    border-radius: 12px; 
 }
 
 /* 歡迎區樣式 */
@@ -56,22 +56,22 @@ main {
 .welcome h1 {
     font-size: 2.8em;
     margin-bottom: 10px;
-    color: rgb(255, 200, 50); /* 主色調橙色 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加文字陰影 */
+    color: rgb(255, 200, 50); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .welcome p {
     font-size: 1.3em;
-    color: rgb(230, 230, 230); /* 更柔和的文字顏色 */
+    color: rgb(230, 230, 230); 
 }
 
 /* 文章列表樣式 */
 .posts {
-    background-color: rgb(54, 54, 92); /* 深色背景 */
+    background-color: rgb(54, 54, 92); 
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 添加陰影 */
-    animation: slideIn 2s forwards; /* 動畫結束後保持最終狀態 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    animation: slideIn 2s forwards; 
 }
 
 .posts h2 {
@@ -93,16 +93,16 @@ main {
     background: linear-gradient(120deg, rgb(82, 82, 136), rgb(54, 54, 92)); 
     border-radius: 8px;
     opacity: 0;
-    transition: all 1s ease-in-out; /* 平滑過渡效果 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 初始陰影 */
-    transform: translateX(-100%); /* 初始從左側外部移入 */
+    transition: all 1s ease-in-out; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transform: translateX(-100%); 
     animation: slideIn 2s forwards; /* 動畫結束後保持最終狀態 */
 }
 
 /* hover 狀態 - 文章列表項目 */
 .posts li:hover {
     background: linear-gradient(45deg, rgb(255, 175, 4), rgb(82, 82, 136));
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* 陰影加深 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
 }
 
 /* 為每個 li 設定不同的延遲時間 */
@@ -111,38 +111,34 @@ main {
 }
 
 .posts li:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.5s;
 }
 
 
 /* 標題和連結樣式 */
-.posts h3 a {
+.posts h3 {
     color: rgb(255, 200, 50);
     text-decoration: none;
     font-size: 1.3em;
     font-weight: bold;
 }
 
-.posts h3 a:hover {
-    color:black;
-    text-decoration: underline;
-}
 
 /* 文字樣式 */
 .posts p {
     margin: 5px 0;
-    color: rgb(220, 220, 220); /* 更柔和的顏色 */
+    color: rgb(220, 220, 220); 
 }
 
 /* 動畫定義 - 從左側滑入 */
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(-100%); /* 從左側外部移入 */
+        transform: translateX(-100%);
     }
     100% {
         opacity: 1;
-        transform: translateX(0); /* 到達最終位置 */
+        transform: translateX(0); 
     }
 }
 
@@ -152,7 +148,7 @@ footer {
     padding: 20px;
     background: linear-gradient(120deg, rgb(42, 42, 84), rgb(54, 54, 92));
     color: rgb(200, 200, 200);
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* 添加上方陰影 */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); 
 }
 
 footer a {
@@ -162,7 +158,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-    color: rgb(255, 255, 255); /* 文字變亮 */
+    color: rgb(255, 255, 255); 
 }
 
 /* 響應式設計 */
