@@ -113,6 +113,9 @@ main {
 .posts li:nth-child(2) {
     animation-delay: 0.5s;
 }
+.posts li:nth-child(3) {
+    animation-delay: 1s;
+}
 
 
 /* 標題和連結樣式 */
